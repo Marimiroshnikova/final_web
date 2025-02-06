@@ -1,3 +1,5 @@
+----
+
 vinyl-landing/
 ├── index.html
 ├── css/
@@ -14,9 +16,8 @@ vinyl-landing/
     ├── Roboto-Bold.ttf
     ├── Roboto-Medium.ttf
     └── Roboto-Regular.ttf
-
-
-
+    
+---
 
 
 1. პროექტში გამოყენებულია სწორი მნიშვნელობის HTML5 ტეგები, როგორიცაა header, nav, main, section და footer. 
