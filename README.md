@@ -1,4 +1,4 @@
-----
+```
 
 vinyl-landing/
 ├── index.html
@@ -17,8 +17,35 @@ vinyl-landing/
     ├── Roboto-Medium.ttf
     └── Roboto-Regular.ttf
     
----
+```
 
+
+
+iris-ml-project/
+├── data_process/
+│   ├── data_generation.py
+│   └── __init__.py
+├── data/
+│   └── iris.csv
+├── training/
+│   ├── Dockerfile
+│   ├── train.py
+│   └── __init__.py
+├── inference/
+│   ├── Dockerfile
+│   ├── run.py
+│   └── __init__.py
+├── tests/
+│   ├── test_model.py
+│   └── test_inference.py
+├── models/
+├── utils.py
+├── settings.json
+├── requirements.txt
+└── README.md
+
+
+```
 
 1. პროექტში გამოყენებულია სწორი მნიშვნელობის HTML5 ტეგები, როგორიცაა header, nav, main, section და footer. 
 ფაილი: index.html
