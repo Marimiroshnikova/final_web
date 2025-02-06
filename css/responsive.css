@@ -1,0 +1,117 @@
+/* 1024px და მეტისთვის */
+@media screen and (min-width: 1024px) {
+  .events__container {
+    padding: 0 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
+
+/* 768px და მეტისთვის */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .nav__toggle,
+  .nav__close {
+    display: none;
+  }
+  .nav__menu {
+    position: static;
+    display: block;
+    box-shadow: none;
+    padding: 0;
+    border-radius: 0;
+  }
+  .nav__list {
+    display: flex;
+  }
+  .events__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* 768px-ის და ქვემოთ */
+@media screen and (max-width: 768px) {
+  .nav__toggle {
+    display: inline-flex;
+  }
+  .nav__menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 80%;
+    height: 100%;
+    padding: 4rem 0 0 3rem;
+    background-color: var(--container-color);
+    box-shadow: -2px 0 4px rgba(0,0,0,0.1);
+    border-radius: 1rem 0 0 1rem;
+    transition: 0.3s;
+    z-index: var(--z-fixed);
+  }
+  .nav__menu.show-menu {
+    right: 0;
+  }
+  .nav__close {
+    display: block;
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    font-size: 1.5rem;
+    color: var(--title-color);
+    cursor: pointer;
+  }
+  .nav__list {
+    flex-direction: column;
+    row-gap: 2rem;
+  }
+}
+
+/* 500px-ის და ქვემოთ */
+@media screen and (max-width: 500px) {
+  .events__container {
+    grid-template-columns: 1fr;
+    padding: 0 5%;
+    margin: 0 auto;
+  }
+  
+  .contact__form {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+/* 480px-ის და ქვემოთ */
+@media screen and (max-width: 480px) {
+  .nav__menu {
+    padding: 4rem 0 0 2rem;
+  }
+  
+  .footer__container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* 320px-ის რეზოლუციისათვის */
+@media screen and (max-width: 320px) {
+  .container {
+    padding: 0 0.5rem;  
+  }
+  .nav__menu {
+    padding: 4rem 0 0 1.5rem;
+  }
+  .button {
+    padding: 0.75rem 1.25rem;  
+  }
+  .hero__title {
+    font-size: calc(var(--h1-font-size) - 0.25rem);
+  }
+  .product__card {
+    padding: 1rem; 
+  }
+  .about__data-card {
+    padding: 1rem;  
+  }
+  
+  .footer__container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
