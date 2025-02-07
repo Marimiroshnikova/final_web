@@ -1,6 +1,5 @@
 
----
-
+```
 
 PROJECT/
 ├── index.html
@@ -21,7 +20,7 @@ PROJECT/
     └── Roboto-Regular.ttf
 
 
-
+```
 
 
 1. **HTML5-სემანტიკა:** სიმენტიკური ტეგები (index.html).  
@@ -36,5 +35,3 @@ PROJECT/
 10. **Cookies:** localStorage და cookies შეტყობინება (js/main.js, css/style.css).
 
 
-
----
