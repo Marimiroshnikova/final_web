@@ -1,4 +1,3 @@
-// Navigation (ბურგერის მენიუს) ფუნქციონალი
 const navMenu   = document.getElementById('nav-menu'),
       navToggle = document.getElementById('nav-toggle'),
       navClose  = document.getElementById('nav-close');
@@ -21,7 +20,6 @@ document.querySelectorAll('.nav__link').forEach(link => {
   });
 });
 
-// Header background change on scroll
 function scrollHeader() {
   const header = document.getElementById('header');
   if (window.scrollY >= 50) {
@@ -32,7 +30,6 @@ function scrollHeader() {
 }
 window.addEventListener('scroll', scrollHeader);
 
-// Scroll Up button functionality
 const scrollUp = document.getElementById('scroll-up');
 function showScrollUp() {
   if (window.scrollY >= 350) {
@@ -51,12 +48,12 @@ scrollUp.addEventListener('click', e => {
   });
 });
 
-// Cookies notification logic
+
 document.addEventListener('DOMContentLoaded', () => {
   const cookieNotification = document.getElementById('cookie-notification');
   const acceptCookiesBtn = document.getElementById('accept-cookies');
 
-  // თუ localStorage-ში წინამდებარე მნიშვნელობა არაა, განუსაზღვრება გამოჩენა
+
   if (localStorage.getItem('cookiesAccepted') === 'true') {
     cookieNotification.style.display = 'none';
   } else {

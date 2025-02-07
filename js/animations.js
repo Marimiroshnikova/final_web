@@ -1,5 +1,3 @@
-// ანიმაციები ScrollReveal-ით
-
 document.addEventListener('DOMContentLoaded', () => {
   const sr = ScrollReveal({
     origin: 'top',

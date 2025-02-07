@@ -17,9 +17,9 @@
   <link rel="stylesheet" href="css/responsive.css">
   
   <!-- ScrollReveal -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollreveal/4.0.9/scrollreveal.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/scrollreveal@4.0.9/dist/scrollreveal.min.js"></script>
   
-  <!-- Local Fonts -->
+  <!-- Fonts -->
   <style>
     @font-face {
       font-family: 'Open Sans';
@@ -49,6 +49,12 @@
       font-family: 'Roboto';
       src: url('fonts/Roboto-Bold.ttf') format('truetype');
       font-weight: 700;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Fugaz One';
+      src: url('fonts/FugazOne-Regular.ttf') format('truetype');
+      font-weight: 400;
       font-style: normal;
     }
   </style>
@@ -107,7 +113,7 @@
     
     <!-- Events სექცია -->
     <section class="events section" id="events">
-      <h2 class="section__title">Featured Tech Events</h2>
+      <h1 class="section__title">Featured Tech Events</h1>
       <br>
       <div class="events__container container" id="events-container">
       </div>
@@ -116,10 +122,11 @@
     <!-- About Us სექცია -->
     <section class="about section" id="about">
       <div class="container">
-        <h2 class="section__title">About Us</h2>
+        <h1 class="section__title">About Us</h1>
         <p class="about__description">
           We curate the best technology events from around the globe to keep you informed and inspired.
-          Whether you're a developer, designer, entrepreneur, or student, we offer valuable insights and opportunities.
+          Whether you're a developer, designer, entrepreneur, or student, we bring you the latest trends, expert insights, and networking opportunities to help you grow.
+          Our mission is to bridge the gap between innovation and knowledge by providing access to high-quality events, workshops, and conferences. We believe in empowering individuals and businesses through education, collaboration, and cutting-edge technology.
         </p>
         <div class="about__container">
           <div class="about__data-card">
@@ -142,30 +149,39 @@
     </section>
     
     <!-- Contact სექცია -->
-    <section class="contact section" id="contact">
-      <div class="container">
-        <h2 class="section__title">Contact Us</h2>
-        <form class="contact__form" id="contact-form" action="#">
-          <div class="form__group">
-            <label for="name" class="form__label">Name</label>
-            <input type="text" id="name" class="form__input" placeholder="Your name">
-            <span class="form__error"></span>
+  <section class="contact section" id="contact" action="#" autocomplete="on">
+    <div class="container">
+      <h2 class="section__title">Contact Us</h2>
+      <form class="contact__form" id="contact-form" action="#">
+        <div class="form__group">
+          <label for="name" class="form__label">Name</label>
+          <input type="text" id="name" class="form__input" placeholder="Your name" autocomplete="name">
+          <span class="form__error"></span>
+        </div>
+        <div class="form__group">
+          <label for="email" class="form__label">Email</label>
+          <input type="email" id="email" class="form__input" placeholder="Your email" autocomplete="email">
+          <span class="form__error"></span>
+        </div>
+        <div class="form__group">
+          <label for="password" class="form__label">Password</label>
+          <div class="password-group" style="display: flex; align-items: center;">
+            <input type="password" id="password" class="form__input" placeholder="Your password" autocomplete="current-password" style="flex: 1;">
+            <button type="button" id="toggle-password" class="toggle-password" style="margin-left: 0.5rem; background: none; border: none;">
+              <i class="ri-eye-line"></i>
+            </button>
           </div>
-          <div class="form__group">
-            <label for="email" class="form__label">Email</label>
-            <input type="email" id="email" class="form__input" placeholder="Your email">
-            <span class="form__error"></span>
-          </div>
-          <div class="form__group">
-            <label for="message" class="form__label">Message</label>
-            <textarea id="message" class="form__input" placeholder="Your message"></textarea>
-            <span class="form__error"></span>
-          </div>
-          <button type="submit" class="button">Send Message</button>
-        </form>
-      </div>
-    </section>
-  </main>
+          <span class="form__error"></span>
+        </div>
+        <div class="form__group">
+          <label for="message" class="form__label">Message</label>
+          <textarea id="message" class="form__input" placeholder="Your message" autocomplete="off"></textarea>
+          <span class="form__error"></span>
+        </div>
+        <button type="submit" class="button">Send Message</button>
+      </form>
+    </div>
+  </section>
 
   <!-- Cookies შეტყობინება -->
   <div class="cookie-notification" id="cookie-notification">
