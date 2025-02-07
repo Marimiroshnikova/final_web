@@ -1,6 +1,5 @@
 
----
-
+```
 
 PROJECT/
 ├── index.html
@@ -37,4 +36,4 @@ PROJECT/
 
 
 
----
+```
